@@ -2,9 +2,6 @@ import * as Http from "http";
 import * as Url from "url";
 import * as Mongo from "mongodb"; 
 
-//mongodb+srv://timknp:<password>@timknp.wm48n.mongodb.net/<dbname>?retryWrites=true&w=majority
-//https://mongodbnetbrowser.herokuapp.com/?u=timknp&p=pw123456&a=timknp.wm48n.mongodb.net&n=Test&c=Students
-
 export namespace PrüfungServer {
     let mongoDaten: Mongo.Collection;
     let databaseUrl: string;
