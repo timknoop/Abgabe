@@ -146,17 +146,12 @@ nav a{
     margin-left: 20px;
     color: #000000;
 }
-nav a:hover{
-    color: #5F5F5F;
-}
-nav img:hover{
-    opacity: 70%;
-}
 #output {
+    margin-top: 10px;
     margin-bottom: 10px;
     text-align: left;
     float: left;
-    width: 100%;
+    width: 95%;
     padding: 10px;
     padding-top: 20px;
     font-family: monospace;
@@ -177,10 +172,6 @@ nav img:hover{
 .products div img{
     height: 350px;
     width: 350px;
-}
-
-.products div img:hover{
-    opacity: 70%;
 }
 .products div p{
     font-family: merienda;
@@ -224,91 +215,22 @@ nav img:hover{
 /*iPad Version*/
 Button {
     background-color: #5F5F5F;
-  border: none;
-  color: white;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0px 2px;
-  margin-left: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  font-family: monospace;
-  font-size: smaller;
-}
-
-#delButton{
-    float: left;
-    margin-left: 75%;
-    margin-top: -80px;
-}
-#deleteButton{
-    float: right;
-    margin-right:50px;
-    margin-top: -80px;
-}
-#form{
-    border-radius: 5px;
-    padding: 10px;
-}
-    input[type=text], select {
-        width: 50%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    #givename {
-        display: none;
-    }
-    
-    #status {
-        display: none;
-    }
-#warenkorbWert>p{
-margin-top: -80px;
-}    
-.orderButton{
-    background-color: #5F5F5F;
     border: none;
     color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-family: monospace;
-  }
-  
-.cart{
-    display: flex;
-    flex-wrap: wrap;
-}
-.cart div{
-    position: relative;
-    float: left;
-    margin-bottom: 10px;
+    font-size: 11px;
     margin-left: 10px;
-    text-align: center;
-    float: left;
-    width: 10%;
-    padding-top: 20px;
-}
-
-.cart div img{
-    height: 100x;
-    width: 100px;
-}
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: monospace;
+    }
     header{
-        height: 100px;
-        background: #f7f4e4;
+        height: 80px;
+        background: #ffffff;
         width: 100%;
         z-index: 12;
         position: fixed;
@@ -321,27 +243,58 @@ margin-top: -80px;
     .top a{
         float: left;
         margin-left: 10px;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
     img[alt="shop_logo"]{
-        margin-top: 10px;
-        width: 70px;
-        height: 70px;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
     }
     nav{
         float: center;
-        line-height: 100px;
+        line-height: 80px;
         margin-left: 10px;
     }
     
     nav a{
         text-decoration: none;
         font-family: monospace;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
-        margin: 0 10px;
+        margin: 0 5px;
         color: #000000;
+    }
+    #delButton{
+        float: left;
+        margin-left: 73%;
+        margin-top: -80px;
+    }
+    img[alt="eiswaffel"]{
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .cart{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cart div{
+        position: relative;
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        text-align: center;
+        float: left;
+        width: 10%;
+        padding-top: 20px;
+    }
+    
+    .cart div img{
+        height: 50x;
+        width: 50px;
     }
     .content-area{
         width: 100%;
@@ -354,8 +307,7 @@ margin-top: -80px;
         letter-spacing: 4px;
         padding-top: 40px;
         padding-bottom: 30px;
-        font-size: 30px;
-        margin: 0; 
+        font-size: 20px;
         margin-left: 10px;
     }
     .content-area p{
@@ -363,14 +315,31 @@ margin-top: -80px;
         font-family: merienda;
         line-height: 30px;
     }
-    img[alt="eiswaffel"]{
+    #deleteButton{
         float: right;
-        margin-top: -60px;
-        margin-right: 30px;
-        width: 35px;
-        height: 35px;
-        position: relative;
+        margin-right:50px;
+        margin-top: 0px;
     }
+    #form{
+        border-radius: 5px;
+        padding: 20px;
+    }
+        input[type=text], select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #givename {
+            display: none;
+        }
+        
+        #status {
+            display: none;
+        }
     .products{
         display: flex;
         flex-wrap: wrap;
@@ -380,8 +349,8 @@ margin-top: -80px;
         margin-bottom: 25px;
         text-align: center;
         float: left;
-        width: 44%;
-        padding: 25px;
+        width: 100%;
+        padding: 20px;
         padding-top: 20px;
     }
     
@@ -390,17 +359,42 @@ margin-top: -80px;
         width: 350px;
     }
     
+    .products input{
+        width: 150px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+    
     .products div p{
         font-family: merienda;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     #warencounter{
         float:right;
-        margin-top: -105px;
+        margin-right: 20px;
+        margin-top: -100px;
         font-size: 15px;
         color: #000000;
         height: 20px;
     }
+    #warenkorbWert>p{
+        float: left;
+        margin-left: 40%;
+        margin-top: -80px;
+        }
+    #givename {
+        display: none;
+    }  
+    #output {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+        float: left;
+        width: 40px;
+        padding: 10px;
+        padding-top: 20px;
+        font-family: monospace;
+    }     
     }
 
 
@@ -417,7 +411,7 @@ margin-top: -80px;
 
 
 
-@media screen and (max-width: 812px){
+@media screen and (max-width: 500px){
 /*iPhone Version*/
         Button {
         background-color: #5F5F5F;
@@ -429,7 +423,7 @@ margin-top: -80px;
         display: inline-block;
         font-size: 8px;
         margin-left: 5px;
-        margin-top: 5px;
+        margin-top: 10px;
         cursor: pointer;
         border-radius: 10px;
         font-family: monospace;
@@ -472,18 +466,15 @@ margin-top: -80px;
             margin: 0 5px;
             color: #000000;
         }
-        nav a:hover{
-            color: #6471FF;
-        }
         #delButton{
             float: left;
-            margin-left: 60%;
+            margin-left: 56%;
             margin-top: -80px;
         }
         img[alt="eiswaffel"]{
             float: right;
             margin-top: 30px;
-            margin-right: 10px;
+            margin-right: 12px;
             width: 20px;
             height: 20px;
         }
@@ -527,7 +518,7 @@ margin-top: -80px;
         }
         #deleteButton{
             float: right;
-            margin-right:10px;
+            margin-right:20px;
             margin-top: -20px;
         }
         .products{
@@ -547,21 +538,12 @@ margin-top: -80px;
         .products div img{
             height: 350px;
             width: 350px;
-        }
-        
-        .products div img:hover{
-            height: 355px;
-            width: 355px;
-        }
-        
+        }     
+ 
         .products input{
             width: 150px;
             margin: 5px;
             border-radius: 3px;
-        }
-        
-        .products input:hover{
-            opacity: 70%;
         }
         
         .products div p{
@@ -570,13 +552,31 @@ margin-top: -80px;
         }
         #warencounter{
             float:right;
+            margin-right: 7px;
             margin-top: -100px;
             font-size: 15px;
             color: #000000;
             height: 20px;
         }
         #warenkorbWert>p{
-            margin-left: 53%;
+            margin-left: 54%;
             margin-top: -80px;
-            }    
+            } 
+        #givename {
+            display: none;
+        }  
+        #form{
+            border-radius: 5px;
+            padding: 20px;
+        }
+        #output {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            float: left;
+            width: 100%;
+            padding: 10px;
+            padding-top: 20px;
+            font-family: monospace;
+        }   
         }
