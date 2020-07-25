@@ -69,5 +69,7 @@ namespace Abgabe {
 
         (<HTMLFormElement>document.getElementById("form"))?.reset();
         await fetch(url);
+        localStorage.clear();
+        location.reload();
     }
 }

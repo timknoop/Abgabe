@@ -57,6 +57,8 @@ var Abgabe;
         url += "?" + query.toString();
         document.getElementById("form")?.reset();
         await fetch(url);
+        localStorage.clear();
+        location.reload();
     }
 })(Abgabe || (Abgabe = {}));
 //# sourceMappingURL=trolley.js.map
