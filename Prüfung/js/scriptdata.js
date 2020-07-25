@@ -1,7 +1,7 @@
 "use strict";
 var Abgabe;
 (function (Abgabe) {
-    loadArtikel("data.json");
+    loadArtikel("../json/data.json");
     async function loadArtikel(_url) {
         let response = await fetch(_url);
         let jsonArray = await response.json();

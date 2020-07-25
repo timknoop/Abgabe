@@ -8,7 +8,7 @@ export interface Artikel {
     }
 
 export let artikel: Artikel[];
-loadArtikel("data.json");
+loadArtikel("../json/data.json");
 
 async function loadArtikel(_url: RequestInfo): Promise<void> {
         let response: Response = await fetch(_url);
