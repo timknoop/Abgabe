@@ -4,8 +4,6 @@ exports.PrüfungServer = void 0;
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
-//mongodb+srv://timknp:<password>@timknp.wm48n.mongodb.net/<dbname>?retryWrites=true&w=majority
-//https://mongodbnetbrowser.herokuapp.com/?u=timknp&p=pw123456&a=timknp.wm48n.mongodb.net&n=Test&c=Students
 var PrüfungServer;
 (function (PrüfungServer) {
     let mongoDaten;
