@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timknoop/GIS-SoSe-2020.git"
+    "url": "git+https://github.com/timknoop/Abgabe.git"
   },
   "author": "timknoop",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/timknoop/GIS-SoSe-2020/issues"
+    "url": "https://github.com/timknoop/Abgabe/issues"
   },
-  "homepage": "https://github.com/timknoop/GIS-SoSe-2020#readme"
+  "homepage": "https://github.com/timknoop/Abgabe#readme"
 }
