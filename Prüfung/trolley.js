@@ -42,13 +42,9 @@ var Abgabe;
     }
     //FORM
     //Bestellung mitsenden
-    // tslint:disable-next-line: typedef
     let element = document.getElementById("givename");
-    // tslint:disable-next-line: typedef
     let html = element.innerText;
-    // tslint:disable-next-line: typedef
     let json = JSON.stringify({ ordered: html });
-    console.log(json);
     let formData;
     let sendButton = document.getElementById("input");
     sendButton.addEventListener("click", inputButtonHandler);

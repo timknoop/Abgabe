@@ -51,13 +51,9 @@ namespace Abgabe {
 
     //FORM
     //Bestellung mitsenden
-    // tslint:disable-next-line: typedef
-    let element = document.getElementById("givename")!;
-    // tslint:disable-next-line: typedef
-    let html = element.innerText;
-    // tslint:disable-next-line: typedef
-    let json = JSON.stringify({ordered: html});
-    console.log(json);
+    let element: HTMLElement = document.getElementById("givename")!;
+    let html: string = element.innerText;
+    let json: string = JSON.stringify({ordered: html});
 
     let formData: FormData;
     let sendButton: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("input"));
