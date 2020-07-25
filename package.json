@@ -1,0 +1,26 @@
+{
+  "name": "gissose2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/mongodb": "^3.5.25",
+    "mongodb": "^3.5.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23"
+  },
+  "scripts": {
+    "start": "node Prüfung/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timknoop/GIS-SoSe-2020.git"
+  },
+  "author": "timknoop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timknoop/GIS-SoSe-2020/issues"
+  },
+  "homepage": "https://github.com/timknoop/GIS-SoSe-2020#readme"
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="trolley.js" defer></script>
+    <title>Shop</title>
+</head>
+<body>
+    <div class="box-area">
+            <header>
+                <div class="wrapper">
+                    <div class="top">
+                        <a href="#"><img src="images/logo.png" alt="shop_logo"></a>
+                    </div>
+                    <nav>
+                        <a href="shop.html">Zurück zum Shop</a>
+                        <div id="warencounter"></div>
+                        <a href="trolley.html"><img src="images/eiswaffel.png" alt="eiswaffel"></a>
+                        <a id="warenkorbWert"></a>
+                        <a id="deleteButton">Bestellung löschen</a>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="content-area">
+                    <h2>Warenkorb:</h2>
+                        <form id="form">
+                            <label>Name</label><br>
+                            <input type="text" name="Name" placeholder="Name"> <br>
+                            <label>Adresse</label><br>
+                            <input type="text" name="Adresse" placeholder="Adresse"><br>
+                            <input id="status" type="text" name="Status" value="ausstehend"><br>
+                            <button class="orderButton" type="button" id="input">Bestellung aufgeben</button>
+                        </form>
+                    <div id="flexWarenkorb" class="products"></div>
+                    <div id="givename"></div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
