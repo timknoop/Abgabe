@@ -562,13 +562,26 @@ Button {
             margin-left: 54%;
             margin-top: -80px;
             } 
-        #givename {
-            display: none;
-        }  
         #form{
             border-radius: 5px;
             padding: 20px;
         }
+            input[type=text], select {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            #givename {
+                display: none;
+            }
+            
+            #status {
+                display: none;
+            }
         #output {
             margin-top: 10px;
             margin-bottom: 10px;
