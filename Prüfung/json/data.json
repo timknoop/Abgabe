@@ -1,9 +1,9 @@
-[{ "img": "../images/eiswaffel.png", "name": "Waffel ", "preis": 0, "category": 1 }, 
-{ "img": "../images/eiswaffel_schoko.png", "name": "Schoko Waffel ", "preis": 0, "category": 1 }, 
-{ "img": "../images/eisbecher.png", "name": "Eisbecher ", "preis": 0, "category": 1 }, 
-{ "img": "../images/Brombeere.png", "name": "Brombeere ", "preis": 1, "category": 1 }, 
-{ "img": "../images/Erdbeere.png", "name": "Erdbeere ", "preis": 1, "category": 1 }, 
-{ "img": "../images/Himbeere.png", "name": "Himbeere ", "preis": 1, "category": 1 }, 
-{ "img": "../images/Mango.png", "name": "Mango ", "preis": 1, "category": 1 }, 
-{ "img": "../images/Schokolade.png", "name": "Schokolade ", "preis": 1, "category": 1 }, 
-{ "img": "../images/Stracciatella.png", "name": "Stracciatella ", "preis": 1, "category": 1 }]
+[{ "img": "../images/eiswaffel.png", "name": "Waffel ", "preis": 0}, 
+{ "img": "../images/eiswaffel_schoko.png", "name": "Schoko Waffel ", "preis": 0}, 
+{ "img": "../images/eisbecher.png", "name": "Eisbecher ", "preis": 0}, 
+{ "img": "../images/Brombeere.png", "name": "Brombeere ", "preis": 1}, 
+{ "img": "../images/Erdbeere.png", "name": "Erdbeere ", "preis": 1},
+{ "img": "../images/Himbeere.png", "name": "Himbeere ", "preis": 1}, 
+{ "img": "../images/Mango.png", "name": "Mango ", "preis": 1}, 
+{ "img": "../images/Schokolade.png", "name": "Schokolade ", "preis": 1}, 
+{ "img": "../images/Stracciatella.png", "name": "Stracciatella ", "preis": 1}]

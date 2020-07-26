@@ -3,50 +3,40 @@ var Abgabe;
 (function (Abgabe) {
     function createArtikel() {
         for (let i = 0; i < Abgabe.artikel.length; i++) {
-            if (Abgabe.artikel[i].category == 1) {
-                let newDiv = document.createElement("div");
-                newDiv.id = "div" + i;
-                document.getElementById("flex1")?.appendChild(newDiv);
-                newDiv.setAttribute("index", i.toString());
-            }
+            let newDiv = document.createElement("div");
+            newDiv.id = "div" + i;
+            document.getElementById("flex1").appendChild(newDiv);
+            newDiv.setAttribute("index", i.toString());
             //IMG
             let imgElement = document.createElement("img");
             imgElement.src = Abgabe.artikel[i].img;
-            document.getElementById("div" + i)?.appendChild(imgElement);
+            newDiv.appendChild(imgElement);
             //NAME
             let name = document.createElement("p");
             name.innerHTML = Abgabe.artikel[i].name;
-            document.getElementById("div" + i)?.appendChild(name);
+            newDiv.appendChild(name);
             //PREIS
             let price = document.createElement("p");
             price.innerHTML = Abgabe.artikel[i].preis + "€";
-            document.getElementById("div" + i)?.appendChild(price);
+            newDiv.appendChild(price);
             //BUY
             let kaufen = document.createElement("button");
             kaufen.innerHTML = "Kaufen";
             kaufen.addEventListener("click", handleTrolley);
-            document.getElementById("div" + i)?.appendChild(kaufen);
-            kaufen.setAttribute("preis", Abgabe.artikel[i].preis.toString());
+            newDiv.appendChild(kaufen);
         }
     }
     Abgabe.createArtikel = createArtikel;
     //Einkaufswagen
-    let summe = 0;
-    let count = 0;
     let artikelCounter = 0;
-    let blasenDiv = document.createElement("div");
+    let counterDiv = document.createElement("div");
     let cartArtikel = [];
     function handleTrolley(_event) {
         if (artikelCounter >= 0) {
-            document.getElementById("warencounter")?.appendChild(blasenDiv);
+            document.getElementById("warencounter")?.appendChild(counterDiv);
         }
         artikelCounter++;
-        blasenDiv.innerHTML = artikelCounter + "";
-        if (_event.currentTarget?.getAttribute("preis")) {
-            summe = count + parseInt(_event.currentTarget?.getAttribute("preis"));
-            count = summe;
-        }
-        console.log(summe.toFixed(0));
+        counterDiv.innerHTML = artikelCounter + "";
         let indexButton = _event.currentTarget.parentElement.getAttribute("index");
         let indexNr = parseInt(indexButton);
         cartArtikel.push(Abgabe.artikel[indexNr]);
@@ -64,12 +54,10 @@ var Abgabe;
             //Div erstellen
             let newDiv = document.createElement("div");
             document.getElementById("flexCart").appendChild(newDiv);
-            newDiv.id = "anidiv" + index;
             //IMG
             let imgElement = document.createElement("img");
             imgElement.src = localStorage.getItem("artikel_bild" + index);
             newDiv.appendChild(imgElement);
-            console.log(imgElement);
         }
     }
     let delButton = document.getElementById("delButton");

@@ -1,6 +1,34 @@
 namespace Abgabe {
 
+export function createArtikel(): void {
+for (let i: number = 0; i < artikel.length; i++) {
 
+    let newDiv: HTMLDivElement = document.createElement("div");
+    newDiv.id = "div" + i;
+    (<HTMLElement>document.getElementById("flex1")).appendChild(newDiv);
+    newDiv.setAttribute("index", i.toString());
+
+    //IMG
+    let imgElement: HTMLImageElement = document.createElement("img");
+    imgElement.src = artikel[i].img;
+    newDiv.appendChild(imgElement);
+
+    //NAME
+    let name: HTMLParagraphElement = document.createElement("p");
+    name.innerHTML = artikel[i].name;
+    newDiv.appendChild(name);
+
+    //PREIS
+    let price: HTMLElement = document.createElement("p");
+    price.innerHTML = artikel[i].preis + "€";
+    newDiv.appendChild(price);
+
+    //BUY
+    let kaufen: HTMLButtonElement = document.createElement("button");
+    kaufen.innerHTML = "Kaufen";
+    kaufen.addEventListener("click", handleTrolley);
+    newDiv.appendChild(kaufen);
+}
 }
 
 //Einkaufswagen
@@ -37,7 +65,6 @@ function createStore(): void {
                 //Div erstellen
                 let newDiv: HTMLDivElement = document.createElement("div");
                 (<HTMLElement>document.getElementById("flexCart")).appendChild(newDiv);
-                newDiv.id = "anidiv" + index;
 
                 //IMG
                 let imgElement: HTMLImageElement = document.createElement("img");
